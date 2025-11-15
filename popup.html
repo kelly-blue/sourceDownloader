@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sources Downloader</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      width: 280px;
+      text-align: center;
+      padding: 14px;
+      background: #f8f9fa;
+    }
+    h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      background: #0078ff;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    button:hover {
+      background: #005bcc;
+    }
+    .progress {
+      width: 100%;
+      height: 10px;
+      background: #e0e0e0;
+      border-radius: 6px;
+      margin-top: 12px;
+      overflow: hidden;
+    }
+    .bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #0078ff, #00c6ff);
+      transition: width 0.3s ease;
+    }
+    .toast {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #0078ff;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      font-size: 13px;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      max-width: 260px;
+      word-wrap: break-word;
+    }
+    footer {
+      margin-top: 15px;
+      font-size: 11px;
+      color: #777;
+    }
+    a {
+      color: #0078ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h3>Download All Sources</h3>
+  <button id="download">Start Download</button>
+
+  <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Download progress">
+    <div class="bar" id="bar"></div>
+  </div>
+
+  <div class="toast" id="toast">✅ Download Complete</div>
+
+  <footer>
+    Created by <b>kelly-blue</b><br>
+    <a href="mailto:kellyblue@bughunter.com">kellyblue@bughunter.com</a><br>
+    <a href="https://github.com/kelly-blue" target="_blank">GitHub Profile</a>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

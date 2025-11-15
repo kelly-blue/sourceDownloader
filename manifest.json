@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Sources Downloader",
+  "description": "Download all files from the Sources tab for bug bounty analysis, preserving folder structure. Created by kelly-blue.",
+  "version": "1.4",
+  "author": "kelly-blue",
+  "homepage_url": "https://github.com/kelly-blue/SourceDownloader",
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "scripting",
+    "activeTab",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "*://*/*",
+    "<all_urls>"
+  ]
+}
